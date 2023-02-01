@@ -4,7 +4,7 @@ pipeline {
         stage('Build Docker App') {
             steps {
                 sh '''
-                docker build -t poojasdocker2023/docker-app:latest -t poojasdocker2023/docker-app:build-$BUILD_NUMBER
+                docker build -t poojasdocker2023/docker-app:latest -t poojasdocker2023/docker-app:build-$BUILD_NUMBER .
                 '''
             }
         }
