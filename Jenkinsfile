@@ -23,7 +23,7 @@ pipeline {
                 docker stop docker-app
                 docker rm docker-app
                 docker rmi poojasdocker2023/docker-app:latest
-                docker -d -p 80:5500 --name docker-app poojasdocker2023/docker-app:latest
+                docker run -d -p 80:5500 --name docker-app poojasdocker2023/docker-app:latest
                 '''
             }
         }
